@@ -4,7 +4,8 @@ Matlab code of a dual simplex-type algorithm for the smallest enclosing ball of 
 
 ## Introduction
 This is the Matlab code of a dual simplex-type algorithm for computing the smallest enclosing ball of a set of balls and other closely related problems. Our algorithm employs a pivoting scheme resembling the simplex method for linear programming, in which a sequence of exact curve searches is performed until a new dual feasible solution with a strictly smaller objective function value is found. We utilize the Cholesky factorization and procedures for updating it, yielding a numerically stable implementation of the algorithm. Our algorithm can efficiently solve instances of dimension 5000 with 100000 points, often within minutes.
-For further information on the algorithm, please consult the respective paper (see Reference / Citation)
+
+For further information on the algorithm, please consult the respective paper (see Reference / Citation).
 
 ## Running the code
 To run the code, call function `main`:  function `[x, S, output] = main (P, options)`
