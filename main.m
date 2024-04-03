@@ -18,11 +18,9 @@ function [x, S, output] = main(P, options)
 
 
 %NOTE:
-%-The height of the point is considered to be the last coordinate. We consider 
+%-The height of the point (radius of the ball) is the last coordinate. We consider 
 % that any point is such that:
-% x = (\bar{x}, x_0) with \bar{x}\in\RR^{n} and x_0\in\RR, so x\in\RR^{n+1}
-% Pb = {\bar{p_i}, i=1,..,m} and P0 = {p_{i0}, i=1,..,m}
-
+% x = (\bar{x}, x_{n+1}) with \bar{x}\in\RR^{n} and x_{n+1}\in\RR, so x\in\RR^{n+1}
 
 %options
 if nargin == 1  %options not given
