@@ -35,8 +35,11 @@ The output struct includes:
 
 ### Example
 `P = randn(50, 1000);
+
 inputSt = createInputStruct (10^-8, 1, 3600, false);
+
 [x, S , outputSt] = main(P, inputSt);
+
 outputSt`
 
 ## Reference / Citation:
