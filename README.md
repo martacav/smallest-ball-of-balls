@@ -16,9 +16,9 @@ To run the code, call function `main`:  function `[x, S, output] = main (P, opti
 
 Use `createinputstruct.m` to create the options struct. The options include:
 - feasTol ~ Primal feasibility tolerance;
-- feasOption ~ 1: it uses the most infeasible point; 2: it uses the first infeasible point found;
-- maxTime ~ maximum running time allowed;
-- iterLog ~ Whether to print a log of each iteration on the console during the algorithm's run.
+- feasOption ~ Choose `1` for the algorithm to use the most infeasible point; Choose `2` to use the first infeasible point found;
+- maxTime ~ maximum running time allowed in seconds;
+- iterLog ~ `true` to print a log of each iteration on the console during the algorithm's run, otherwise `false`.
 
 ### Output of main  
 - x ~ optimal solution;
@@ -32,6 +32,9 @@ The output struct includes:
 - mbs ~ maximum size observed of a basis
 - obs ~ size of the optimal basis
 - status ~ Either `MAXTIME` or `OPTIMAL`
+
+### Example
+
 
 ## Reference / Citation:
 [Cavaleiro, M., Alizadeh, F. A dual simplex-type algorithm for the smallest enclosing ball of balls. Computational Optimization and Applications 79, 767-787 (2021)](https://link.springer.com/article/10.1007/s10589-021-00283-6)
