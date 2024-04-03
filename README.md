@@ -34,7 +34,10 @@ The output struct includes:
 - status ~ Either `MAXTIME` or `OPTIMAL`
 
 ### Example
-
+`P = randn(50, 1000);
+inputSt = createInputStruct (10^-8, 1, 3600, false);
+[x, S , outputSt] = main(P, inputSt);
+outputSt`
 
 ## Reference / Citation:
 [Cavaleiro, M., Alizadeh, F. A dual simplex-type algorithm for the smallest enclosing ball of balls. Computational Optimization and Applications 79, 767-787 (2021)](https://link.springer.com/article/10.1007/s10589-021-00283-6)
