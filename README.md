@@ -8,7 +8,7 @@ This is the Matlab code of a dual simplex-type algorithm for computing the small
 For further information on the algorithm, please consult the respective paper (see Reference / Citation).
 
 ## Running the code
-To run the code, call function `main`:  function `[x, S, output] = main (P, options)`
+To run the code, call function `main` :  `[x, S, output] = main (P, options)`
 
 ### Input of main 
 - P ~ matrix containing the data points - each column corresponds to a point;
